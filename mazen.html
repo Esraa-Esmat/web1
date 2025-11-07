@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
+<!-- الصفحه كلها انجليزي ليه عامله عربي ومن اليمين للشمال ؟؟ راجع قصدك كدا  -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,31 +15,51 @@
 
             <div class="signup-form-left">
                 <div class="logo">
-                    <img class="ma" src="ChatGPT Image Sep 27, 2025, 06_11_59 PM.png" alt="">
+                    <img class="ma" src="logo-image.png" alt=""> <!-- لا عادي حسيت انه كدا تعبنا وشقنا مش حاجات شات جي بي تي 😂-->
                 </div>
                 <h2>Sign up</h2>
                 <!-- تم تعديل السطر الخاص بـ action فقط -->
                 <form action="home.html" method="POST" class="signup-form">
 
-                    <label for="name">Name</label>
+                    <label for="name"> Name </label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-                    <label for="email">Email</label>
+                    <label for="email"> Email </label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-                    <label for="password">Password</label>
+                    <label for="password"> Password </label>
                     <input type="password" id="password" name="password" placeholder="Create a password" required
                         minlength="8">
                     <p class="password-note">Must be at least 8 characters.</p>
 
                     <button type="submit" class="btn primary-btn">Create account</button>
-                    
-                    <button class="btn secondary-btn google-btn">
+
+                    <!-- <button class="btn secondary-btn google-btn">
                         <img src="Google-Logo.webp" alt="Google icon"> 
                         <a href="https://www.bing.com/search?q=google+sign+in&qs=OS&pq=google+sin&sk=SS1&sc=12-10&cvid=F32CD2EAE64E4DABBD4FA0EBB310830F&FORM=QBRE&sp=2&ghc=1&lq=0">
                             Sign in with Google
                         </a> 
+                    </button> -->
+
+                     <!-- 
+                    عملت كومنت عشان ما يحصلش تعارض بين الزرار والرابط
+                    اللينك جو الزرار غلك في الترتيب
+                    ممكن نصلحها بطريقتين 
+                     -->
+
+                    <!-- اول حاجه نعمل onclick على الزرار يودي على جوجل -->
+                    <button type="button" class="btn secondary-btn google-btn"
+                        onclick="window.location.href='https://accounts.google.com'"> <!--غيرت اللينك بتاع جوجل للينك مختصر عشان يكون بروفيشنال اكتر-->
+                        <img src="Google-Logo.webp" alt="Google icon">
+                        Sign in with Google
                     </button>
+
+                    <!-- او نخليه لينك علي طول و نديله ستايل زرار -->
+                    <a class="btn secondary-btn google-btn" href="https://accounts.google.com">
+                        <img src="Google-Logo.webp" alt="Google icon">
+                        Sign in with Google
+                    </a>
+                    <!-- اختار الي تحبه بقي -->
 
                     <p class="login-link">
                         Already have an account? <a href="#">Log in</a>
@@ -48,6 +68,8 @@
             </div>
 
             <div class="pic-right"></div>
+
+        </div> <!-- قفلت عشان مكنتش مقفولهsignup-container -->
     </section>
 </body>
 
